@@ -64,5 +64,6 @@ transformed_df.write.format("parquet").mode("overwrite").save("/FileStore/tables
 | versicolor | 5.936             | 4.260            | 
 | virginica  | 6.588             | 5.552            | 
 
-🎉 Done!  
+### 🎉 Done!  
+
 You’ve successfully built and run an ETL pipeline on Databricks! 🎉

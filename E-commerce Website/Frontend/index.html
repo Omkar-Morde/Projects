@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshMart - Simple E-Commerce</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>FreshMart</h1>
+      <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Products Section -->
+      <section class="products">
+        <!-- Product cards will be inserted here by JavaScript -->
+      </section>
+
+      <!-- Cart Sidebar -->
+      <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <button id="close-cart">×</button>
+        </div>
+        <div class="cart-items">
+          <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-footer">
+          <p>Total: $<span id="cart-total">0</span></p>
+          <button id="checkout-btn">Checkout</button>
+        </div>
+      </div>
+
+      <!-- Checkout Form -->
+      <div class="checkout-form" id="checkout-form">
+        <button id="close-checkout">×</button>
+        <h2>Checkout</h2>
+        <form id="checkout">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="Card Number" required />
+          <button type="submit">Complete Purchase</button>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay" id="overlay"></div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
